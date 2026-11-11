@@ -1,0 +1,88 @@
+
+
+nav{
+    margin: 1% 5% 1% 5%;
+    padding: 4% 5% 0% 10%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    gap: 3%;
+    background-color: #7c170d;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+}
+
+.child1{
+    animation: forwards 1s;
+    animation-name: glowing-button-startup ;
+
+    color: #000 ;
+    flex: 1;
+    padding: 3%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: small;
+
+}
+
+.child1:hover{
+    animation: reverse 50ms;
+    animation-name: glowing-button-rev;
+}
+
+.child{
+    animation: forwards 1s;
+    animation-name: glowing-button-startup ;
+
+    flex: 1;
+    padding: 3%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: small;
+
+}
+
+.child:hover{
+    animation: reverse 50ms;
+    animation-name: glowing-button-rev;
+
+}
+
+@keyframes glowing-button-startup {
+  0% {
+    color: rgb(0, 0, 0);
+    font-size: large;
+
+  }
+
+  100% {
+    color: rgb(255,255,255);
+    font-size: small;
+  }
+}
+
+@keyframes glowing-button-startup-rev {
+  
+    0% {
+        color: rgb(255,255,255);
+        background-color: rgb(255,255,255,0);
+        
+    }    
+    10% {
+        color: rgb(255,255,255);
+        background-color: rgb(255,255,255,0);
+        
+    }
+
+    100% {
+        color: rgb(0, 0, 0);
+        background-color: #000;
+        
+    }
+
+
+}
