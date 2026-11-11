@@ -1,0 +1,23 @@
+
+.page-content::-webkit-scrollbar {
+    width: 20px;
+}
+
+.page-content::-webkit-scrollbar-track {background: rgba(0, 0, 0, 0.5);}
+
+.page-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1px 5px 1px 5px;
+    border: #000 1px solid;
+
+}
+
+.page-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.page-content::-webkit-scrollbar-corner{
+    background: transparent;
+    border: none;
+    outline: none;
+}
