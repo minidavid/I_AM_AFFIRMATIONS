@@ -1,0 +1,13 @@
+.wowie {
+    background: #fff;
+    color: #000; /* Changed to white so you can read 'Yep' */
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 3%;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
