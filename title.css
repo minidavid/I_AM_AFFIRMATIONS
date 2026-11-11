@@ -1,0 +1,28 @@
+
+.title{
+    width: 50%;
+    height: auto;
+    margin-left: 24%; 
+    margin-right: 24%;
+    transition: transform 0.5s ;
+}
+
+@media (min-width: 720px) {
+    .title {
+        width: 25%;
+        height: auto;
+        margin-left: 37%; 
+        margin-right: 37%;
+    }    
+}
+
+.title:hover{
+    transform: rotate3d(10,5,3,45deg);
+}
+
+
+
+
+
+
+
