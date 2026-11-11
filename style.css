@@ -1,0 +1,87 @@
+html{
+    scrollbar-width: auto;
+    scrollbar-color: #ff0000;
+    scrollbar-shadow-color: #000;
+    scroll-behavior: smooth;
+    font-variant-ligatures: historical-ligatures;
+    font-kerning: normal;
+    line-height: normal;
+}
+
+::-webkit-scrollbar-corner{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+::-webkit-scrollbar { width: 50px;}
+textarea::-webkit-scrollbar {
+    width: 50px;
+}
+
+::-webkit-scrollbar-track {background: #0a0a0f;}
+
+textarea::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 1px 10px 1px 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 1px 5px 1px 5px;
+    border: #fff 1px solid;
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover{
+    background: #fff;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+
+::selection{
+    background: rgba(rgb(237, 86, 86), 10, 10, 0.9);
+    color: #630000;
+}
+
+::-moz-selection{
+    background: rgba(rgb(237, 86, 86), 10, 10, 0.9);
+    color: #630000;
+}
+
+
+body{
+    background-color: #ebe1d5;
+    font-family: montserrat, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    animation: text-startup;
+    animation-duration: 1s;
+}
+
+p{
+    animation: text-startup;
+    animation-duration: 3s;
+}
+
+@keyframes text-startup {
+  0% {
+    color: rgba(0,0,0,0);
+
+  }
+
+  100% {
+    color: rgb(0,0,0);
+  }
+}
