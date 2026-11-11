@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my_header.css">
+    <link rel="stylesheet" href="my_footer.css">
+    <link rel="stylesheet" href="tutorials.css">
+    
+    
+    <script src="my_header.js" defer></script>
+    <script src="my_footer.js" defer></script>
+    <script src="stuff.js" defer></script>
+    <script src="news.js" defer></script>
+    <script src="jquery.js" defer></script>
+    
+    
+    <!-- CDN Link for PageFlip (Keep 'defer' so it doesn't block HTML parsing) -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js" defer></script>
+
+
+    <style>
+
+        @font-face {
+            font-family: HausEthnik;
+            src: url('haus-ethnik-dingbats.regular.otf');
+            font-size: 64px;
+            font-style: normal;
+            font-display: block;
+        }
+
+        table a{
+            text-decoration: none;
+            color:#000000;
+        }
+
+        table a:hover{
+            text-decoration: underline;
+        }
+
+        table td{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .flip-book{
+            margin: 40px auto;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 1);
+            background-color: #ffffff;
+        }
+
+        /* Individual page containers controlled by the library */
+       
+       /* Hard Cover Pages (First and Last sheets) */
+    .page-cover {
+        background-color: #000000 !important; /* Deep leather brown */
+        color: #ffffff !important;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .page-cover .page-content {
+        background-color: #000000;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        align-items: center;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .page-cover h2 {
+        font-family: montserrat;
+        font-size: 2.2rem;
+        color: #d7ccc8;
+        text-align: center;
+        border: 2px solid #000000;
+        padding: 20px;
+    }
+
+
+    .page {
+        background-color: #c20707;
+        box-sizing: border-box;
+        font-variant-ligatures: common-ligatures;
+    }
+
+    /* Internal layout for borders, typography alignment, and flow */
+    .page-content {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        overflow-y: scroll;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fcfaf2; /* Soft warm paper tone */
+        border: 1px solid #e1ded7;
+    }
+
+
+        /*Typography*/
+        /* Content Headers */
+    .page-header {
+        font-family: montserrat;
+        font-size: 15px;
+        color: #000000;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    /* Core images - Ensure they fill the visual viewport nicely */
+    .page-image {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px 1px 20px 1px;
+        margin-bottom: 3%;
+        box-shadow: inset 0px -20px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Paragraph Blocks */
+    .page-text {
+        font-family: montserrat;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #000000;
+        flex-grow: 1;
+    }
+
+    /* Page Numbers at Bottom */
+    .page-footer {
+        font-size: 1rem;
+        color: #999999;
+        text-align: center;
+        border-top: 1px solid #eeeeee;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+/**/
+    </style>
+
+</head>
+<body>
+    <my-js-header></my-js-header>
+
+    <div>
+        <p style="margin-left: -1%; font-family: 'HausEthnik'; font-size: 64px; letter-spacing: 0em;">wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p>
+    </div>
+
+    <div class="flip-book" id="tutorial">
+
+        <div class="page page-cover page-cover-top" data-density="hard">
+            <div class="page-content">
+                <h3>ART TUTORIALS</h3>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h2 class="page-header">Page Navigation</h2>
+                
+                <div class="page-text">
+                    <i>Swipe</i> or <i>tap</i> to move from page to page.
+                </div>
+                
+                <br>
+                 <div class="page-text">
+                    <i>Scroll</i> with the scrollbar.
+                </div>
+
+                <br>
+                 <div class="page-text">
+                    <i>Tap</i> objects & links.
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="page">
+            <div class="page-content"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h2 class="page-header">Table of content</h2>
+                <div class="page-text" style="text-align: start;">
+                    <br>
+
+                    <table style="border-collapse: collapse; border-top: 1px dashed rgba(0, 0, 0, 1.0); border-bottom: 1px dashed rgba(0, 0, 0, 1.0); padding: 5%;">
+                        <tr style="border-bottom: 1px solid rgba(0, 0, 0, 0.5); margin: 5%;">
+                            <td><a href="#affirmations" class="page-link" data-goto="affirmations">I am Affirmations Tutorials:</a></td>
+                            <td>I</td>
+                        </tr>
+                        <tr style="margin: 5%;">
+                            <td><ul><a href="#1" class="page-link" data-goto="1" >The ook of Stuff</a></ul></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td style="margin-left: 5%;"><ul><a href="#2" class="page-link" data-goto="2">The ook of Stuff 2</a></ul></td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    
+                    <br><br>
+                    
+                    <br>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div id="" class="page"></div>
+
+        <div id="" class="page"></div>
+
+        <div id="" class="page"></div>
+
+        <div id="affirmations" class="page">
+            <div class="page-content">
+                <h2 class="page-header">I AM AFFIRMATIONS TUTORIALS</h2>
+            </div>
+
+            <div class="page-footer">i</div>
+
+        </div>
+        
+        <div id="" class="page">
+            <div class="page-content"></div>
+        </div>
+
+        <div id="1" class="page">
+            <div class="page-content">
+                <h2 class="page-header">Page Header 2</h2>
+                <div class="page-image" style="background-image: url(2.jpg)"></div>
+                <div class="page-text">Page Content 2</div>
+                <div class="page-footer">
+
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/78R8ZlDTQls?si=5dDNJHqRnFUmjyrf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    
+                </div>
+                <div class="page-footer">1</div>
+            </div>
+        </div>
+
+        <div id="2" class="page">
+            <div class="page-content">
+                <h2 class="page-header">Page Header 2</h2>
+                <div class="page-image" style="background-image: url(2.jpg)"></div>
+                <div class="page-text">Page Content 2</div>
+                <div class="page-footer">
+
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/78R8ZlDTQls?si=5dDNJHqRnFUmjyrf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="page page-cover page-cover-bottom" data-density="hard">
+            <div class="page-content">
+                <h2>THE END</h2>
+            </div>
+        </div>
+    </div>
+
+   
+    <my-js-footer></my-js-footer>
+
+
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let pageFlip = null;
+            let savedPage = parseInt(localStorage.getItem("activeFlipbookPage")) || 0;
+            let widthsize = 300
+            let heightsize = 600
+
+            function initFlip(){
+                const screenwidth = window.innerWidth;
+                const screenheight = window.innerHeight;
+                
+                let flipSettings = {
+                    startPage: savedPage,
+                    size: "stretch", 
+                    width: widthsize,
+                    height: heightsize,
+                    minWidth: 210,
+                    maxWidth: 250,
+                    minHeight: 420,
+                    maxHeight: 500,
+                    drawShadow: true,
+                    flippingTime: 1000,
+                    usePortrait: true,
+                    startZIndex: 0,
+                    autoSize: true,
+                    maxShadowOpacity: 1,
+                    showCover: false,
+                    mobileScrollSupport: true,
+                    swipeDistance: 3,
+                    clickEventForward: true,
+                    useMouseEvents: true,
+                    showPageCorners: true,
+                    disableFlipByClick: false
+                };
+                
+                
+                if (screenwidth < 768) {
+                    widthsize = 180;
+                    heightsize = 240;
+                    flipSettings.width = widthsize;
+                    flipSettings.height = heightsize; // 16:9 mobile aspect ratio feel
+                    flipSettings.minWidth = 180;
+                    flipSettings.maxWidth = 200;
+                    flipSettings.minHeight = 240;
+                    flipSettings.maxHeight = 240;
+                    flipSettings.usePortrait = true; // Force single-page view on mobile
+                    flipSettings.showCover = false;  // Disables book-jacket cover behavior for easy reading
+                }
+                else {
+                    widthsize = 300;
+                    heightsize = 400;
+                    flipSettings.width = widthsize;
+                    flipSettings.height = heightsize; // 16:9 mobile aspect ratio feel
+                    flipSettings.minWidth = 300;
+                    flipSettings.maxWidth = 300;
+                    flipSettings.minHeight = 400;
+                    flipSettings.maxHeight = 400;
+                    flipSettings.usePortrait = true; // Force single-page view on mobile
+                    flipSettings.showCover = false; 
+                }
+
+
+                if (pageFlip){
+                    pageFlip.updateFromHtml(document.querySelectorAll(".page"));
+                    pageFlip.updateOrientation(flipSettings.usePortrait ? 'portrait' : 'landscape');
+                }
+                else {
+                    
+                    // 1. Create the settings object and instantiate PageFlip
+                    pageFlip = new St.PageFlip(
+                        document.getElementById("tutorial"),
+                        flipSettings
+                    );
+
+                    // 2. Instruct the library to scrape and load your HTML blocks into the script
+                    pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+                    
+                    pageFlip.on('flip', (e) => {
+                        savedPage = e.data;
+                        localStorage.setItem("activeFlipbookPage", savedPage);
+                    });
+
+
+                }
+                
+
+             
+            
+            }
+
+
+            initFlip();
+
+            let resizeTimeout;
+            window.addEventListener('resize',function(){
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    initFlip();
+                },150);
+            }
+
+            );
+            //pageflip size stops here
+
+
+
+            //this is the switch pages with <a> tags!
+            document.querySelectorAll('.page-link').forEach(link => {
+
+                link.addEventListener('click', function(e){
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement && pageFlip){
+                        const pages = Array.from(document.querySelectorAll('.flip-book .page'));
+                        const pageIndex = pages.indexOf(targetElement);
+
+                        if (pageIndex !== -1){
+                            pageFlip.flip(pageIndex);
+                        }
+                    }
+
+                });
+
+            });
+
+        });
+        
+    </script>
+
+</body>
+</html>
+
