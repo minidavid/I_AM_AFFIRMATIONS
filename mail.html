@@ -1,0 +1,108 @@
+<html lang="en">
+
+    <head>
+        <title>mail us :)</title>
+        <link rel="stylesheet" href="mail.css">
+        <link rel="stylesheet" href="my_header.css">
+        <link rel="stylesheet" href="my_footer.css">
+        <link rel="stylesheet" href="email_button.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="my_header.js" defer></script>
+        <script src="my_footer.js" defer></script>
+
+    </head>
+
+    <body>
+
+        
+        <!-- header -->
+        <my-js-header></my-js-header>
+
+
+
+        <h1 style="margin-top: 10%; margin-left: 5%;">Comments? Complaints? Commends?</h1>
+        <p style="margin-top: 5%; margin-left: 5%;">Email us!</p>
+
+            <!--Last Part of Page-->
+
+
+
+            <div class="formA">
+                <form id="myForm">
+                    <label for="fname" style="color: rgb(0, 0, 0);">Your name: </label>
+                    <br>
+                    <br>
+                    <input type="text" class="txtname" id="fname" placeholder="name goes here" name="fname">
+                    <br><br>
+                    <label for="email" style="color: rgb(0, 0, 0);">Email: </label>
+                    <br>
+                    <input class="txtemail" type="email" id="email" placeholder="myemail@email.com" name="email">
+                    <br><br>
+                    <label for="email" style="color: rgb(0, 0, 0);">Content: </label>
+                    <br>
+                    <textarea name="message" rows="5">Dear sir/madam,
+
+Your Message...
+
+Regards,
+Your name.
+</textarea>
+                    <br><br>
+                    <button class="cool" type="submit" role="button" onclick="LookAtData()">Send Email</button>
+                    <br>
+
+                </form>
+            </div>
+        
+            
+
+
+        <!--footer-->
+
+        <my-js-footer></my-js-footer>
+
+    </body>
+
+    <script>
+        const form = document.getElementById('myForm');
+    
+        form.addEventListener('submit', function(event){
+
+            event.preventDefault(); //refuse to refresh
+            const formData = new FormData(form); //pass form elemet to Formata strutor
+            const formProps = Object.fromEntries(formData); //make JS ojet.
+            let isValid = true;
+
+            console.log(formProps);
+
+            for (const [key, value] of formData){
+                if (key=="fname" && value.trim()==""){
+                    alert("Add your name please :)");
+                    isValid = false;
+                }
+                
+                else if (key=="email" && value.trim()==""){
+                    alert("Forgot the email address :(");
+                    isValid = false;
+                }
+
+                else if (key=="message" && value.trim()==""){
+                    alert("Add your message please :)");
+                    isValid = false;
+                }
+
+            }
+
+            if (isValid){
+                alert("Sent!");
+            }
+
+        });
+
+        function LookAtData(){
+            
+        }
+
+    </script>
+</html>
