@@ -1,0 +1,1 @@
+The software uses eula licese.

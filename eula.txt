@@ -1,0 +1,79 @@
+END USER LICENSE AGREEMENT (EULA)
+I AM AFFIRMATIONS – MULTI-APP ECOSYSTEM
+Last Updated: 14/11/2026
+IMPORTANT: PLEASE READ THIS END USER LICENSE AGREEMENT ("EULA") CAREFULLY BEFORE DOWNLOADING, INSTALLING, ACCESSING, OR USING THE "I AM AFFIRMATIONS" SOFTWARE, WEBSITE, DIGITAL BOOK, OR GAME.
+This End User License Agreement is a legally binding contract between you (either an individual adult user or a parent/legal guardian acting on behalf of a minor, referred to as "User" or "You") and minidavid (referred to as "Licensor," "We," "Us," or "Our"), a company/entity operating under the laws of the Republic of Kenya, with its principal place of business at Ruiru, Kenya.
+By clicking "I Agree," downloading, installing, accessing, or otherwise using any part of the I Am Affirmations ecosystem, You acknowledge that You have read, understood, and agree to be bound by the terms of this EULA. If You do not agree to these terms, do not install, access, or use the Software.
+
+1. DEFINITIONS
+
+• "Software" or "Ecosystem" refers collectively and individually to the I Am Affirmations multi-app suite, including:
+	1. The I Am Affirmations Website located at [Your Website URL];
+	2. The I Am Affirmations Digital/Interactive Children's Book;
+	3. The I Am Affirmations Mobile/Desktop Application(s); and
+	4. The I Am Affirmations Interactive Game(s), including all associated updates, patches, audio, illustrations, code, and content.
+• "Child User" refers to a minor under the age of eighteen (18) who uses the Software under the supervision and consent of a Parent or Legal Guardian.
+
+2. PARENTAL CONSENT & CHILDREN'S USE (KENYA DATA PROTECTION COMPLIANCE)
+
+The Software is designed for children and families. Under the laws of the Republic of Kenya (including the Children Act, 2022 and the Data Protection Act, 2019):
+• Age of Majority: Only individuals aged eighteen (18) years or older may enter into this EULA.
+• Parental Supervision: If You are allowing a Child User to access the Website, Book, App, or Game, You represent and warrant that You are the parent or legal guardian of that child, You consent to their use of the Software, and You accept full legal responsibility for their compliance with this EULA.
+• Child Data Protection: We strictly adhere to Section 33 of the Kenya Data Protection Act, 2019 regarding the processing of personal data relating to a child. Any personal data collected (if any) is strictly minimized, protected, and processed only with verifiable parental consent as detailed in our Privacy Policy at [Link to Privacy Policy].
+
+3. GRANT OF LICENSE
+
+Subject to Your strict compliance with the terms of this EULA and payment of any applicable fees, the Licensor grants You a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to:
+• Download, install, and run the I Am Affirmations mobile/desktop applications and games on personal devices that You own or control.
+• Access and stream/read the I Am Affirmations Website and Digital Book for personal, non-commercial, educational, and family entertainment purposes.
+
+4. LICENSE RESTRICTIONS
+
+You agree that You shall NOT, and shall not permit any third party (including any Child User) to:
+1. Commercial Use: Sell, rent, lease, lend, distribute, broadcast, or commercially exploit the Software, the Book's text/illustrations, or the Game's assets (including use in schools, daycares, or commercial institutions without a separate Institutional License).
+2. Modification & Reverse Engineering: Copy, modify, adapt, translate, reverse engineer, decompile, disassemble, or create derivative works based on the Software, Website, Book, or Game.
+3. Circumvention: Bypass, disable, or tamper with any security features, digital rights management (DRM), or payment/subscription walls within the Ecosystem.
+4. Unlawful Use: Use the Software in any manner that violates the Computer Misuse and Cybercrimes Act, 2018 of Kenya or any other applicable local or international law.
+
+5. INTELLECTUAL PROPERTY RIGHTS
+
+All title, ownership rights, and intellectual property rights in and to the I Am Affirmations Ecosystem—including but not limited to the title "I Am Affirmations," characters, story text, affirmations, illustrations, animations, audio recordings, musical scores, game mechanics, source code, and trademarks—are the exclusive property of [Your Company/Creator Name].
+The Software is protected by the Copyright Act (Cap. 130) and the Trademarks Act (Cap. 506) of the Laws of Kenya, as well as international copyright treaties. This EULA does not grant You any ownership interest in the Software, only a limited right of use.
+
+6. IN-APP PURCHASES, SUBSCRIPTIONS, AND PAYMENTS
+
+Certain portions of the Website, Book, App, or Game may require payment, a one-time purchase, or a recurring subscription.
+• Authorization: By making a purchase (via M-Pesa, card, Apple App Store, Google Play Store, or our Website), You confirm that You are the authorized account holder.
+• App Store Terms: If You downloaded the App or Game via a third-party platform (such as Google Play or the Apple App Store), Your payment and refund rights are also governed by that platform's terms of service.
+• Consumer Protection: Refunds and cancellations are handled in accordance with the Consumer Protection Act, 2012 of Kenya and the specific refund policy displayed at the point of purchase.
+
+7. UPDATES AND AVAILABILITY
+
+We may, from time to time, provide updates, bug fixes, new affirmations, or new game levels. We reserve the right to modify, suspend, or discontinue any part of the Website, App, Book, or Game at any time without liability to You, provided that active paid subscribers receive fair notice or pro-rata adjustments where required by Kenyan law.
+
+8. DISCLAIMER OF WARRANTIES
+
+TO THE MAXIMUM EXTENT PERMITTED BY THE LAWS OF KENYA, THE SOFTWARE (WEBSITE, BOOK, APP, AND GAME) IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.
+• Educational/Entertainment Purpose Only: The affirmations, stories, and games in I Am Affirmations are designed to encourage positive self-esteem and mindfulness in children. They do not constitute professional psychological, medical, psychiatric, or therapeutic advice.
+• We do not warrant that the Software will be completely error-free, uninterrupted, or compatible with every device.
+
+9. LIMITATION OF LIABILITY
+
+To the fullest extent permitted under Kenyan law, [Your Company/Creator Name], its directors, authors, illustrators, and developers shall not be liable for any indirect, incidental, special, or consequential damages (including loss of data or device malfunction) arising out of Your use or inability to use the Software. In any event, Our total liability to You for any claim arising under this EULA shall not exceed the actual amount paid by You for the Software in the twelve (12) months preceding the claim.
+
+10. TERMINATION
+
+This EULA is effective until terminated. Your rights under this EULA will terminate automatically without notice if You fail to comply with any of its terms. Upon termination, You must immediately cease all use of the Website, Book, App, and Game, and delete all copies of the Software from Your devices.
+
+11. GOVERNING LAW AND DISPUTE RESOLUTION
+
+• Governing Law: This EULA shall be governed by, construed, and enforced in accordance with the Laws of the Republic of Kenya, without regard to its conflict of law principles.
+• Dispute Resolution: In the event of any dispute arising out of or relating to this EULA, the parties shall first attempt to resolve the matter amicably through good-faith negotiation within thirty (30) days. If unresolved, the dispute shall be referred to mediation or the competent courts of the Republic of Kenya located in Nairobi, Kenya.
+
+12. CONTACT INFORMATION
+
+If You have any questions, complaints, or inquiries regarding this EULA or the I Am Affirmations Ecosystem, please contact us at:
+• Entity Name: minidavid
+• Residence: Ruiru
+• Email: minidavid@protonmail.com
+• Phone: +254791568676
