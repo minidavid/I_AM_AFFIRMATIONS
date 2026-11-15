@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -30,7 +31,8 @@
 
 
             <div class="formA">
-                <form id="myForm" action="https://formsubmit.co/minidavid@protonmail.com" method="post">
+                <form id="myForm" action="https://formsubmit.co/6f84348dd036f1ad278a3d5483f80af8" method="post">
+                    <input type="text" name="_honey" style="display:none">
                     <label for="fname" style="color: rgb(0, 0, 0);">Your name: </label>
                     <br>
                     <p></p>
@@ -40,7 +42,7 @@
                     <br>
                     <input class="txtemail" type="email" id="email" placeholder="myemail@email.com" name="email" required/>
                     <br><p></p>
-                    <label for="email" style="color: rgb(0, 0, 0);">Content: </label>
+                    <label for="message" style="color: rgb(0, 0, 0);">Content: </label>
                     <br>
                     <textarea name="message" rows="5">Dear sir/madam,
 
@@ -50,7 +52,7 @@ Regards,
 Your name.
 </textarea>
                     <br><br>
-                    <button class="cool" type="submit" role="button">Send Email</button>
+                    <button class="cool" type="submit"  id="submitBtn" role="button">Send Email</button>
                     <br>
 
                 </form>
@@ -65,7 +67,7 @@ Your name.
 
     </body>
 
-    <script>
+    <!-- <script>
         const form = document.getElementById('myForm');
 
         form.addEventListener('submit', function(event) {
@@ -86,6 +88,71 @@ Your name.
             if (!isValid) {
                 event.preventDefault(); // Only stop submission if invalid
             }
+        });
+    </script> -->
+
+    <script>
+        const form = document.getElementById('myForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const name = formData.get("name").trim();
+            const email = formData.get("email").trim();
+            const message = formData.get("message").trim();
+            const honey = formData.get("_honey");
+
+            if (name === "") {
+                alert("Add your name please :)");
+                return;
+            }
+            if (email === "") {
+                alert("Forgot the email address :(");
+                return;
+            }
+            if (message === "") {
+                alert("Add your message please :)");
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+
+            fetch("https://formsubmit.co", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message,
+                    _honey: honey,
+                    _captcha: "false",
+                    _subject: `New website message from ${name}`,
+                    _autoresponse: "Thanks for reaching out! We have received your message and will get back to you soon."
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success === "true" || data.success === true) {
+                    alert("Sent!");
+                    form.reset();
+                } else {
+                    alert("Something went wrong. Please try again.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Failed to send email. Check your connection.");
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Send Email";
+            });
         });
     </script>
 </html>
