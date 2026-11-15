@@ -55,6 +55,10 @@ textarea:hover{
 
 }
 
+input{
+    color: #fff;
+}
+
 input:hover{
     width:100%;
     margin-left: -4%;
