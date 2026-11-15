@@ -50,7 +50,7 @@ Regards,
 Your name.
 </textarea>
                     <br><br>
-                    <button class="cool" type="submit" role="button" onclick="LookAtData()">Send Email</button>
+                    <button class="cool" type="submit" role="button">Send Email</button>
                     <br>
 
                 </form>
@@ -67,43 +67,25 @@ Your name.
 
     <script>
         const form = document.getElementById('myForm');
-    
-        form.addEventListener('submit', function(event){
 
-            event.preventDefault(); //refuse to refresh
-            const formData = new FormData(form); //pass form elemet to Formata strutor
-            const formProps = Object.fromEntries(formData); //make JS ojet.
+        form.addEventListener('submit', function(event) {
+            const formData = new FormData(form);
             let isValid = true;
 
-            console.log(formProps);
-
-            for (const [key, value] of formData){
-                if (key=="fname" && value.trim()==""){
-                    alert("Add your name please :)");
-                    isValid = false;
-                }
-                
-                else if (key=="email" && value.trim()==""){
-                    alert("Forgot the email address :(");
-                    isValid = false;
-                }
-
-                else if (key=="message" && value.trim()==""){
-                    alert("Add your message please :)");
-                    isValid = false;
-                }
-
+            if (formData.get("name").trim() === "") {
+                alert("Add your name please :)");
+                isValid = false;
+            } else if (formData.get("email").trim() === "") {
+                alert("Forgot the email address :(");
+                isValid = false;
+            } else if (formData.get("message").trim() === "") {
+                alert("Add your message please :)");
+                isValid = false;
             }
 
-            if (isValid){
-                alert("Sent!");
+            if (!isValid) {
+                event.preventDefault(); // Only stop submission if invalid
             }
-
         });
-
-        function LookAtData(){
-            
-        }
-
     </script>
 </html>
