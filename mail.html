@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <meta charset="UTF-8">
         <title>mail us :)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mail.css">
@@ -12,98 +11,83 @@
 
         <script src="my_header.js" defer></script>
         <script src="my_footer.js" defer></script>
+
     </head>
 
     <body>
+
+        
         <!-- header -->
         <my-js-header></my-js-header>
+
+
 
         <h1 style="margin-top: 10%; margin-left: 5%;">Comments? Complaints? Commends?</h1>
         <p style="margin-top: 5%; margin-left: 5%;">Email us!</p>
 
-        <!--Last Part of Page-->
-        <div class="formA">
-            <form id="myForm">
-                <input type="text" name="_honey" style="display:none">
+            <!--Last Part of Page-->
 
-                <label for="fname" style="color: rgb(0, 0, 0);">Your name:</label><br><br>
-                <input type="text" class="txtname" id="fname" placeholder="name goes here" name="name" required/><br><br>
 
-                <label for="email" style="color: rgb(0, 0, 0);">Email:</label><br><br>
-                <input class="txtemail" type="email" id="email" placeholder="myemail@email.com" name="email" required/><br><br>
 
-                <label for="message" style="color: rgb(0, 0, 0);">Content:</label><br><br>
-                <textarea id="message" name="message" rows="5" placeholder="Dear sir/madam,&#10;&#10;Your Message...&#10;&#10;Regards,&#10;Your name." required></textarea><br><br>
+            <div class="formA">
+                <form id="myForm" action="https://formsubmit.co/6f84348dd036f1ad278a3d5483f80af8" method="post">
+                    <input type="hidden" name="_next" value="https://minidavid.github.com/I_AM_AFFIRMATIONS/index.html/>
+                    <label for="fname" style="color: rgb(0, 0, 0);">Your name: </label>
+                    <br>
+                    <p></p>
+                    <input type="text" class="txtname" id="fname" placeholder="name goes here" name="name" required/>
+                    <br><p></p>
+                    <label for="email" style="color: rgb(0, 0, 0);">Email: </label>
+                    <br>
+                    <input class="txtemail" type="email" id="email" placeholder="myemail@email.com" name="email" required/>
+                    <br><p></p>
+                    <label for="email" style="color: rgb(0, 0, 0);">Content: </label>
+                    <br>
+                    <textarea name="message" rows="5">Dear sir/madam,
 
-                <button class="cool" type="submit" id="submitBtn">Send Email</button><br>
-            </form>
-        </div>
+Your Message...
+
+Regards,
+Your name.
+</textarea>
+                    <br><br>
+                    <button class="cool" type="submit"  id="submitBtn" role="button">Send Email</button>
+                    <br>
+
+                </form>
+            </div>
+        
+            
+
 
         <!--footer-->
+
         <my-js-footer></my-js-footer>
 
-        <script>
-            const form = document.getElementById('myForm');
-            const submitBtn = document.getElementById('submitBtn');
-
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                const formData = new FormData(form);
-                const name = formData.get("name").trim();
-                const email = formData.get("email").trim();
-                const message = formData.get("message").trim();
-                const honey = formData.get("_honey");
-
-                if (name === "") {
-                    alert("Add your name please :)");
-                    return;
-                }
-                if (email === "") {
-                    alert("Forgot the email address :(");
-                    return;
-                }
-                if (message === "") {
-                    alert("Add your message please :)");
-                    return;
-                }
-
-                submitBtn.disabled = true;
-                submitBtn.textContent = "Sending...";
-
-                fetch("https://formsubmit.co", {
-                    method: "POST",
-                    headers: { 
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        name: name,
-                        email: email,
-                        message: message,
-                        _honey: honey,
-                        _captcha: "false",
-                        _subject: `New website message from ${name}`
-                    })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success === "true" || data.success === true) {
-                        alert("Sent!");
-                        form.reset();
-                    } else {
-                        alert("Something went wrong. Please try again.");
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("Failed to send email. Check your connection.");
-                })
-                .finally(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = "Send Email";
-                });
-            });
-        </script>
     </body>
+
+    <script>
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function(event) {
+            const formData = new FormData(form);
+            let isValid = true;
+
+            if (formData.get("name").trim() === "") {
+                alert("Add your name please :)");
+                isValid = false;
+            } else if (formData.get("email").trim() === "") {
+                alert("Forgot the email address :(");
+                isValid = false;
+            } else if (formData.get("message").trim() === "") {
+                alert("Add your message please :)");
+                isValid = false;
+            }
+
+            if (!isValid) {
+                event.preventDefault(); // Only stop submission if invalid
+            }
+        });
+    </script>
+
 </html>
